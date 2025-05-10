@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: todo
+  datasource:
+    url: jdbc:sqlite:memory:myDb?cache=shared
+    driver-class-name: org.sqlite.JDBC
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
